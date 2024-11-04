@@ -6,6 +6,7 @@ def max_profit(prices):
         return 0  # if list of prices is empty
 
     profits = [0] * len(prices)  # Initialize the list of profits
+    #each element in the list of prices is set to zero
 
     for i in range(1, len(prices)):
         if prices[i] > prices[i - 1]:
